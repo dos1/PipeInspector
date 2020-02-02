@@ -1,0 +1,360 @@
+<dvdauthor dest="./dest/">
+
+
+<vmgm>
+<menus>
+<video format="pal" aspect="16:9"></video>
+
+<pgc>
+  <vob file="plumber1.mkv.mpg"></vob>
+  <pre>jump titleset 1 menu;</pre>
+  <post>jump titleset 1 menu;</post>
+</pgc>
+</menus>
+</vmgm>
+
+<titleset>
+
+<menus>
+<video format="pal" aspect="16:9"></video>
+
+<!-- 1 -->
+<pgc entry="root">
+  <vob file="menu.mkv.mpg"></vob>
+  <button>jump menu 21;</button>
+  <post>jump menu 1;</post>
+</pgc>
+
+<!-- 2 -->
+<pgc>
+  <vob file="plumber2.mkv.mpg"></vob>
+  <post>jump menu 3;</post>
+</pgc>
+
+<!-- 3 -->
+<pgc>
+  <vob file="door.mkv.mpg"></vob>
+  <button>jump menu 5;</button>
+  <button>jump menu 4;</button>
+  <post>jump menu 4;</post>
+</pgc>
+
+<!-- 4 -->
+<pgc>      
+  <vob file="plumber4.mkv.mpg"></vob>
+  <post>jump menu 36;</post>
+</pgc>
+
+<!-- 5 -->
+<pgc>
+  <vob file="plumber5.mkv.mpg"></vob>
+  <post>jump menu 6;</post>
+</pgc>
+
+<!-- 6 -->
+<pgc>
+  <vob file="plumber6.mkv.mpg"></vob>
+  <post>jump menu 7;</post>
+</pgc>
+
+<!-- 7 -->
+<pgc>
+  <vob file="name.mkv.mpg"></vob>
+  <button>{ g1 = 1; jump menu 8; }</button>
+  <button>{ g1 = 2; jump menu 9; }</button>
+  <button>{ g1 = 3; jump menu 10; }</button>
+</pgc>
+
+<!-- 8 -->
+<pgc> 
+  <vob file="plumber8.mkv.mpg"></vob>
+  <post>jump menu 11;</post>
+</pgc>
+
+<!-- 9 -->
+<pgc>
+  <vob file="plumber9.mkv.mpg"></vob>
+  <post>jump menu 11;</post>
+</pgc>
+
+<!-- 10 -->
+<pgc>
+  <vob file="plumber10.mkv.mpg"></vob>
+  <post>jump menu 11;</post>
+</pgc>
+
+<!-- 11 -->
+<pgc>
+  <vob file="plumber11.mkv.mpg"></vob>
+  <post>jump menu 12;</post>
+</pgc>
+
+<!-- 12 -->
+<pgc>
+  <vob file="doyoumind.mkv.mpg"></vob>
+  <button>jump menu 13;</button>
+  <button>jump menu 14;</button>
+</pgc>
+
+<!-- 13 -->
+<pgc>  
+  <vob file="plumber13.mkv.mpg"></vob>
+  <post>jump menu 15;</post>
+</pgc>
+
+<!-- 14 -->
+<pgc>
+  <vob file="plumber14.mkv.mpg"></vob>
+  <post>jump menu 15;</post>
+</pgc>
+
+<!-- 15 -->
+<pgc>
+  <vob file="plumber15.mkv.mpg"></vob>
+  <post>jump menu 16;</post>
+</pgc>
+
+<!-- 16 -->
+<pgc>
+  <vob file="plumber16.mkv.mpg"></vob>
+  <post>jump menu 17;</post>
+</pgc>
+
+
+<!-- 17 -->
+<pgc>
+  <vob file="drain.mkv.mpg"></vob>
+  <button>jump menu 19;</button>
+  <button>jump menu 20;</button>
+  <button>jump menu 18;</button>
+</pgc>
+
+<!-- 18 -->
+<pgc>  
+  <vob file="plumber18.mkv.mpg"></vob>
+  <post>jump menu 17;</post>
+</pgc>
+
+<!-- 19 -->
+<pgc>
+  <vob file="plumber19.mkv.mpg"></vob>
+  <post>jump menu 17;</post>
+</pgc>
+
+<!-- 20 -->
+<pgc>
+  <vob file="plumber20.mkv.mpg"></vob>
+  <post>{ g2 = 0; g3 = 0; jump menu 21; }</post>
+</pgc>
+
+<!-- 21 -->
+<pgc>
+  <vob file="game-plumber21.mkv.mpg"></vob>
+  <post>{ g7 = 0; g4 = 8; jump menu 22; button = 1024;  <!-- g5 = random(7); if (g5 eq 1) jump menu 22; if (g5 eq 2) jump menu 23; if (g5 eq 3) jump menu 24; if (g5 eq 4) jump menu 25; if (g5 eq 5) jump menu 26; if (g5 eq 6) jump menu 27; if (g5 eq 7) jump menu 28; --> }</post>
+  <pre>if (g9 == 1) { g9 = 0; g7 = 0; g4 = 8; jump menu 22; button = 1024; } </pre>
+  <button>g1=g1;</button>
+  <button>g1=g1;</button>
+  <button>g1=g1;</button>
+  <button>g1=g1;</button>
+  <button>g1=g1;</button>
+  <button>g1=g1;</button>
+  <button>g1=g1;</button>
+  <button>g1=g1;</button>
+  <button>g1=g1;</button>
+</pgc>
+
+<!-- 22 right -->
+<pgc>
+  <vob file="game-plumber22.mkv.mpg"></vob>
+  <post>g7=1; g4 = g4 - 1; g6 = 6; if (g4 gt 0) { g5 = random(7); if (g5 eq 1) jump menu 22; if (g5 eq 2) jump menu 23; if (g5 eq 3) jump menu 24; if (g5 eq 4) jump menu 25; if (g5 eq 5) jump menu 26; if (g5 eq 6) jump menu 27; if (g5 eq 7) jump menu 28; } else { jump menu 31; }</post>
+  <pre>if (g7 eq 1) { if (button eq g6 * 1024) { if (g2 eq 1) { jump menu 30;} else {g2=1; jump menu 29; } } } button = 1024; </pre>
+  <button>g1=g1;</button>
+  <button>g1=g1;</button>
+  <button>g1=g1;</button>
+  <button>g1=g1;</button>
+  <button>g1=g1;</button>
+  <button>g1=g1;</button>
+  <button>g1=g1;</button>
+  <button>g1=g1;</button>
+  <button>g1=g1;</button>
+</pgc>
+
+<!-- 23 down -->
+<pgc>
+  <vob file="game-plumber23.mkv.mpg"></vob>
+  <post>g7=1; g4 = g4 - 1; g6 = 8; if (g4 gt 0) { g5 = random(7); if (g5 eq 1) jump menu 22; if (g5 eq 2) jump menu 23; if (g5 eq 3) jump menu 24; if (g5 eq 4) jump menu 25; if (g5 eq 5) jump menu 26; if (g5 eq 6) jump menu 27; if (g5 eq 7) jump menu 28; } else { jump menu 31; }</post>
+  <pre>if (g7 eq 1) { if (button eq g6 * 1024) { if (g2 eq 1) { jump menu 30;} else {g2=1; jump menu 29; } } } button = 1024; </pre>
+  
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+</pgc>
+
+<!-- 24 left -->
+<pgc>
+  <vob file="game-plumber24.mkv.mpg"></vob>
+  <post>g7=1; g4 = g4 - 1; g6 = 4; if (g4 gt 0) { g5 = random(7); if (g5 eq 1) jump menu 22; if (g5 eq 2) jump menu 23; if (g5 eq 3) jump menu 24; if (g5 eq 4) jump menu 25; if (g5 eq 5) jump menu 26; if (g5 eq 6) jump menu 27; if (g5 eq 7) jump menu 28; } else { jump menu 31; }</post>
+  <pre>if (g7 eq 1) { if (button eq g6 * 1024) { if (g2 eq 1) { jump menu 30;} else {g2=1; jump menu 29; } } } button = 1024; </pre>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+</pgc>
+
+<!-- 25 left -->
+<pgc>
+  <vob file="game-plumber25.mkv.mpg"></vob>
+  <post>g7=1; g4 = g4 - 1; g6 = 4; if (g4 gt 0) { g5 = random(7); if (g5 eq 1) jump menu 22; if (g5 eq 2) jump menu 23; if (g5 eq 3) jump menu 24; if (g5 eq 4) jump menu 25; if (g5 eq 5) jump menu 26; if (g5 eq 6) jump menu 27; if (g5 eq 7) jump menu 28; } else { jump menu 31; }</post>
+  <pre>if (g7 eq 1) { if (button eq g6 * 1024) { if (g2 eq 1) { jump menu 30;} else {g2=1; jump menu 29; } } } button = 1024; </pre>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+</pgc>
+
+<!-- 26 right -->
+<pgc>
+  <vob file="game-plumber26.mkv.mpg"></vob>
+  <post>g7=1; g4 = g4 - 1; g6 = 6; if (g4 gt 0) { g5 = random(7); if (g5 eq 1) jump menu 22; if (g5 eq 2) jump menu 23; if (g5 eq 3) jump menu 24; if (g5 eq 4) jump menu 25; if (g5 eq 5) jump menu 26; if (g5 eq 6) jump menu 27; if (g5 eq 7) jump menu 28; } else { jump menu 31; }</post>
+  <pre>if (g7 eq 1) { if (button eq g6 * 1024) { if (g2 eq 1) { jump menu 30;} else {g2=1; jump menu 29; } } } button = 1024; </pre>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+</pgc>
+
+<!-- 27 left -->
+<pgc>
+  <vob file="game-plumber27.mkv.mpg"></vob>
+  <post>g7=1; g4 = g4 - 1; g6 = 4; if (g4 gt 0) { g5 = random(7); if (g5 eq 1) jump menu 22; if (g5 eq 2) jump menu 23; if (g5 eq 3) jump menu 24; if (g5 eq 4) jump menu 25; if (g5 eq 5) jump menu 26; if (g5 eq 6) jump menu 27; if (g5 eq 7) jump menu 28; } else { jump menu 31; }</post>
+  <pre>if (g7 eq 1) { if (button eq g6 * 1024) { if (g2 eq 1) { jump menu 30;} else {g2=1; jump menu 29; } } } button = 1024; </pre>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+</pgc>
+
+<!-- 28 up -->
+<pgc>
+  <vob file="game-plumber28.mkv.mpg"></vob>
+  <post>g7=1; g4 = g4 - 1; g6 = 2; if (g4 gt 0) { g5 = random(7); if (g5 eq 1) jump menu 22; if (g5 eq 2) jump menu 23; if (g5 eq 3) jump menu 24; if (g5 eq 4) jump menu 25; if (g5 eq 5) jump menu 26; if (g5 eq 6) jump menu 27; if (g5 eq 7) jump menu 28; } else { jump menu 31; }</post>
+  <pre>if (g7 eq 1) { if (button eq g6 * 1024) { if (g2 eq 1) { jump menu 30;} else {g2=1; jump menu 29; } } } button = 1024; </pre>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+</pgc>
+
+<!-- 29 lose1 -->
+<pgc>
+  <vob file="game-plumber29.mkv.mpg"></vob>
+  <post>g9=1; jump menu 21;</post>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+</pgc>
+
+<!-- 30 lose2 -->
+<pgc>
+  <vob file="game-plumber30.mkv.mpg"></vob>
+  <post>g2=0; g9=1; jump menu 21;</post>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+</pgc>
+
+<!-- 31 -->
+<pgc>
+  <vob file="plumber31.mkv.mpg"></vob>
+  <pre>if (g7 eq 1) { if (button eq g6 * 1024) { if (g2 eq 1) { jump menu 30;} else {g2=1; jump menu 29; } } }</pre>
+  <post>jump menu 32;</post>
+</pgc>
+
+<!-- 32 -->
+<pgc>
+  <vob file="plumber32.mkv.mpg"></vob>
+  <post>{ if (g1 eq 1) jump menu 33; if (g1 eq 2) jump menu 34; if (g1 eq 3) jump menu 35; }</post>
+</pgc>
+
+<!-- 33 stacy -->
+<pgc>
+  <vob file="plumber33.mkv.mpg"></vob>
+  <post>jump title 1;</post>
+</pgc>
+
+<!-- 34 lucy -->
+<pgc>
+  <vob file="plumber34.mkv.mpg"></vob>
+  <post>jump title 1;</post>
+</pgc>
+
+<!-- 35 meg -->
+<pgc>
+  <vob file="plumber35.mkv.mpg"></vob>
+  <post>jump title 1;</post>
+</pgc>
+
+<!-- 36 game over -->
+<pgc>
+  <vob file="plumber.mkv.mpg"></vob>
+  <button>if (g2 eq 1) jump menu 20; else jump menu 1;</button>
+  <post>if (g2 eq 1) jump menu 20; else jump menu 1;</post>
+</pgc>
+
+</menus>
+
+<titles>
+<video format="pal" aspect="16:9"></video>
+<pgc>
+  <!-- credits -->
+  <vob file="plumber36.mkv.mpg"></vob>
+  <post>call menu;</post>
+</pgc>
+
+</titles>
+</titleset>
+
+</dvdauthor>

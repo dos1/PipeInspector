@@ -1,0 +1,4 @@
+#!/bin/sh
+rm *.mkv.mpg
+for i in *.mkv; do ffmpeg -i $i -aspect 16:9 -target pal-dvd $i.mpg; done
+./do-menus

@@ -1,0 +1,12 @@
+#!/bin/sh
+spumux game.xml < plumber21.mkv.mpg > game-plumber21.mkv.mpg
+spumux game.xml < plumber22.mkv.mpg > game-plumber22.mkv.mpg
+spumux game.xml < plumber23.mkv.mpg > game-plumber23.mkv.mpg
+spumux game.xml < plumber24.mkv.mpg > game-plumber24.mkv.mpg
+spumux game.xml < plumber25.mkv.mpg > game-plumber25.mkv.mpg
+spumux game.xml < plumber26.mkv.mpg > game-plumber26.mkv.mpg
+spumux game.xml < plumber27.mkv.mpg > game-plumber27.mkv.mpg
+spumux game.xml < plumber28.mkv.mpg > game-plumber28.mkv.mpg
+spumux game.xml < plumber29.mkv.mpg > game-plumber29.mkv.mpg
+spumux game.xml < plumber30.mkv.mpg > game-plumber30.mkv.mpg
+

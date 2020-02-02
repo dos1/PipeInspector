@@ -1,0 +1,13 @@
+<subpictures>
+  <stream>
+    <spu 
+       force="yes"
+       start="00:00:00.00" end="00:00:00.0"
+       select="drainh.png"
+       highlight="drain.png"
+       autooutline="infer"
+       outlinewidth="8"
+       autoorder="rows">
+    </spu>
+  </stream>
+</subpictures>

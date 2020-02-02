@@ -1,0 +1,23 @@
+<subpictures>
+  <stream>
+    <spu 
+       force="yes"
+       start="00:00:00.00"
+       select="gameh.png"
+       highlight="game.png"
+    >
+     <button name="1" x0="0" y0="0" x1="2" y1="2" up="2" left="4" down="8" right="6" />
+     <button name="2" x0="2" y0="0" x1="4" y1="2" up="2" left="2" down="2" right="2" />
+     <button name="3" x0="4" y0="0" x1="6" y1="2" up="1" left="2" down="6" right="3" />
+
+     <button name="4" x0="0" y0="2" x1="2" y1="4" up="4" left="4" down="4" right="4" />
+     <button name="5" x0="2" y0="2" x1="4" y1="4" up="2" left="4" down="8" right="6" />
+     <button name="6" x0="4" y0="2" x1="6" y1="4" up="6" left="6" down="6" right="6" />
+
+     <button name="7" x0="0" y0="4" x1="2" y1="6" up="4" left="7" down="7" right="8" />
+     <button name="8" x0="2" y0="4" x1="4" y1="6" up="8" left="8" down="8" right="8" />
+     <button name="9" x0="4" y0="4" x1="6" y1="6" up="6" left="8" down="9" right="9" />
+
+    </spu>
+  </stream>
+</subpictures>

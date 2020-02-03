@@ -63,6 +63,7 @@
   <button>{ g1 = 1; jump menu 8; }</button>
   <button>{ g1 = 2; jump menu 9; }</button>
   <button>{ g1 = 3; jump menu 10; }</button>
+  <post>jump menu 7;</post>
 </pgc>
 
 <!-- 8 -->
@@ -94,6 +95,7 @@
   <vob file="doyoumind.mkv.mpg" pause="1"></vob>
   <button>jump menu 13;</button>
   <button>jump menu 14;</button>
+  <post>jump menu 12;</post>
 </pgc>
 
 <!-- 13 -->
@@ -127,6 +129,7 @@
   <button>jump menu 19;</button>
   <button>jump menu 20;</button>
   <button>jump menu 18;</button>
+  <post>jump menu 17;</post>
 </pgc>
 
 <!-- 18 -->

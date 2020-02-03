@@ -1,2 +1,2 @@
 #!/bin/sh
-rm -rf dest/* && dvdauthor -x dvd.xml && mkisofs --dvd-video -V PipeInspector -o dvd.iso dest
+rm -rf dest/* && dvdauthor -x dvd.xml && genisoimage --dvd-video -V PipeInspector -o dvd.iso dest

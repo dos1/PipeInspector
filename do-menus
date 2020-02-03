@@ -4,4 +4,5 @@ spumux doyoumind.xml < plumber12.mkv.mpg > doyoumind.mkv.mpg
 spumux drain.xml < plumber17.mkv.mpg > drain.mkv.mpg
 spumux name.xml < plumber7.mkv.mpg > name.mkv.mpg
 spumux door.xml < plumber3.mkv.mpg > door.mkv.mpg
+spumux gameover.xml < plumber.mkv.mpg > gameover.mkv.mpg
 

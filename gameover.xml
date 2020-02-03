@@ -1,0 +1,12 @@
+<subpictures>
+  <stream>
+    <spu 
+       force="yes"
+       start="00:00:00.00"
+       select="gameh.png"
+       highlight="game.png"
+    >
+     <button x0="100" y0="426" x1="620" y1="476" />
+    </spu>
+  </stream>
+</subpictures>

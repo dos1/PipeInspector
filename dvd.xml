@@ -438,9 +438,9 @@
 
 <!-- 36 game over -->
 <pgc>
-  <vob file="plumber.mkv.mpg" pause="1"></vob>
-  <button>if (g2 eq 1) jump menu 20; else jump menu 1;</button>
-  <post>if (g2 eq 1) jump menu 20; else jump menu 1;</post>
+  <vob file="gameover.mkv.mpg" pause="1"></vob>
+  <button>jump menu 1;</button>
+  <post>jump menu 1;</post>
 </pgc>
 
 </menus>

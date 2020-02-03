@@ -147,7 +147,7 @@
 <!-- 20 -->
 <pgc>
   <vob file="plumber20.mkv.mpg" pause="1"></vob>
-  <post>{ g2 = 0; g3 = 0; g4 = 10; jump menu 21; }</post>
+  <post>{ g2 = 0; g3 = 0; g4 = 8; jump menu 21; }</post>
 </pgc>
 
 <!-- 21 -->
